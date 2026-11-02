@@ -18,8 +18,13 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - run: npm run package:extension
+      - run: node scripts/package-submission.mjs
       - run: npm run scan:secrets
       - uses: actions/upload-artifact@v4
         with:
           name: signcast-extension
           path: artifacts/signcast-extension.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: signcast-submission-kit
+          path: artifacts/signcast-submission-kit.zip

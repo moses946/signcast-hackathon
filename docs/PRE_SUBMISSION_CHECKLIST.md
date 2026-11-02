@@ -6,14 +6,14 @@ Source: https://twitchcon-codex.devpost.com/rules
 ## Passed in the latest verification
 
 - TypeScript checking and production builds.
-- All 27 unit/integration checks: authentication boundaries, channel isolation, segmentation, queue limits, resampling, retained media, one render shared by ten HTTP readers, and replay reuse.
+- All 28 unit/integration checks: authentication boundaries, channel isolation, segmentation, queue limits, resampling, retained media, one render shared by ten HTTP readers, and replay reuse.
 - All four Chromium checks: two independent players' replay/hide controls; complete-MP4 playback without MediaSource; basic keyboard/input-scope checks; synthetic microphone AudioWorklet capture and pause cleanup.
 - Extension ZIP rebuilt with root viewer.html, config.html, live.html entrypoints.
 - Heuristic secret scan of source, built bundles, and available Git history.
 - Live AWS health; OAuth redirect/client/callback matching; diagnostic extension signing-secret exchange; allowed extension-origin CORS; absence of demo authentication in live mode.
 - Earlier real Amazon Transcribe smoke check on the same implementation returned three final and seven interim segments. This is not a long-session or accuracy evaluation.
 
-The first sandboxed integration attempt could not connect to temporary local ports (EACCES). The rerun with local socket access passed all 27 checks. No product fix was needed.
+The first sandboxed integration attempt could not connect to temporary local ports (EACCES). The rerun with local socket access passed all 27 original checks. No product fix was needed.
 
 ## Try locally without Signvrse
 
@@ -33,4 +33,8 @@ Copy the local dashboard's private OBS fallback URL into an OBS Browser Source a
 - Longer transcription rotation/recovery and capacity/performance evidence remain unverified. Do not claim these targets as achieved.
 - Record the project functioning on Twitch in an under-three-minute public YouTube video, include Codex build evidence, prepare the description/repository link/session ID and judge access instructions, and submit before the deadline.
 
-Signvrse's latest account/health checks returned Google Frontend HTTP 503. Cloud billing is enabled and the service's minimum instance count is one; payment as the underlying cause is unconfirmed. Log access was denied to the signed-in account. Keep this external blocker distinct from tests that passed with fixtures.
+Signvrse's latest account/health checks returned Google Frontend HTTP 503. The updated application can continue real captions and microphone capture while signing is unavailable, with an explicit signing retry after recovery. Cloud billing is enabled and the service's minimum instance count is one; payment as the underlying cause is unconfirmed. Log access was denied to the signed-in account. Keep this external blocker distinct from tests that passed with fixtures.
+
+## Submission packet
+
+Copy-ready materials are in submission/. Native console inspection confirmed Hosted Test, correct viewer/config/live paths, and mk__dons on the testing allowlist. The current browser URL safety check stopped further Computer Use before installation/native playback could be verified.

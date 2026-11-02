@@ -40,7 +40,7 @@ The extension is in Twitch Hosted Test, not publicly released. Builds, 28 unit/i
 
 ## Form values
 
-- Repository: https://github.com/moses946/signcast
+- Repository: https://github.com/moses946/signcast-hackathon
 - Hosted companion: https://si-eb3f0fb6d3914816a6229496e4cfa0e2.ecs.eu-west-1.on.aws
 - Codex session ID, verified from the current process: `01a19aeb-e2f3-7611-9b71-92986ea57fb4`
 - Built with: TypeScript, React, Node.js, Express, Vite, WebSockets, AudioWorklet, Twitch Extensions, Twitch API, Amazon Transcribe, Amazon ECS, Amazon ECR, AWS Secrets Manager, Signvrse API, Codex, Vitest, Playwright.

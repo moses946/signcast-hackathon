@@ -1,6 +1,6 @@
 # SignCast access for judges
 
-Repository: https://github.com/moses946/signcast
+Repository: https://github.com/moses946/signcast-hackathon
 
 Companion: https://si-eb3f0fb6d3914816a6229496e4cfa0e2.ecs.eu-west-1.on.aws
 

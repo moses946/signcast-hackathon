@@ -2,7 +2,7 @@ param(
   [ValidateSet('Prepare','Build','Deploy','Status','Configure')][string]$Phase='Status',
   [string]$Profile='signcast', [string]$Region='eu-west-1',
   [string]$Slug='signcast-01a19aeb',
-  [string]$Repository='https://github.com/moses946/signcast.git',
+  [string]$Repository='https://github.com/moses946/signcast-hackathon.git',
   [string]$Revision='', [string]$PublicUrl='', [switch]$Live
 )
 $ErrorActionPreference='Stop'

@@ -1,10 +1,12 @@
 # SignCast
 
+**New agent:** read [CONTEXT.md](CONTEXT.md) before continuing.
+
 Native desktop Twitch Component Extension for AI-generated ASL signing, English speech captions, personal timing and replay. A broadcaster companion captures a microphone; an OBS Browser Source provides a fallback. Each phrase is rendered once through the hosted Signvrse API and shared across viewers.
 
 **Prototype:** ASL accuracy, native Twitch Hosted Test, OBS playback, and live latency require verification. Synthetic demo media is a test pattern, not sign language.
 
-Hosted app: [Open SignCast](https://si-eb3f0fb6d3914816a6229496e4cfa0e2.ecs.eu-west-1.on.aws) · [Public repository](https://github.com/moses946/signcast). The hosted app is configured for live providers and Twitch login. Signvrse currently returns HTTP 503, so actual interpretation remains blocked; live ASL is not yet validated.
+Hosted app: [Open SignCast](https://si-eb3f0fb6d3914816a6229496e4cfa0e2.ecs.eu-west-1.on.aws) · [Public repository](https://github.com/moses946/signcast-hackathon). The hosted app is configured for live providers and Twitch login. Signvrse currently returns HTTP 503. Live captions can continue while signing is unavailable; retry signing explicitly after recovery. Live ASL is not yet validated.
 
 ## Latest decisions
 
@@ -88,3 +90,7 @@ SignCast keeps no audio recordings. It retains transient PCM only for streaming 
 ## Ownership and attribution
 
 SignCast application code is newly created for this project. Signvrse is a separately hosted API dependency; no rights to its backend or avatar assets are granted here. Confirm API use, project ownership, and competition eligibility independently before submission. The synthetic FFmpeg fixture is documented in `fixtures/README.md`.
+
+## Submission materials
+
+See [the submission kit](submission/FINAL_STEPS.md) for the Devpost draft, verified Codex session ID, recording script, judge instructions, Twitch fields, and remaining platform checks. Branding and listing images are under assets/branding/. Public deployment policy pages are `/privacy` and `/terms`.

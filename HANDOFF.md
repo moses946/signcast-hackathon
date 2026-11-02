@@ -54,3 +54,7 @@ The deterministic IAM generator did not recognize Transcribe Streaming. Its inco
 ## Latest deployment verification
 
 On 2 November 2026, the live configuration passed hosted health, OAuth redirect/client/callback matching, server-signed diagnostic extension JWT exchange, configured-origin CORS, and disabled demo-auth checks. ECS has one task and a completed rollout. This does not replace real Twitch Helper/account testing. The latest authenticated Signvrse `/v1/me` check still returned HTTP 503; no paid render was attempted. Ignored evidence: `artifacts/hosted-live-config-check.json` and `artifacts/provider-check.json`.
+
+## Submission preparation update
+
+Commit 31719eb adds real captions through a signing-preflight outage, explicit signing retry, hosted privacy/terms pages, published branding/listing assets, and a copy-ready submission packet. 28 unit/integration and four browser checks pass; public CI passed. Native console inspection confirmed version 0.0.1 in Hosted Test with correct paths and only mk__dons allowlisted. Computer Use then stopped because the current browser URL could not be verified safely; installation, real Helper playback, second-account access, and actual OBS remain unverified. OBS was not found in standard local installation paths. Do not claim these are complete. The verified Codex session ID is in submission/DEVPOST_DRAFT.md.
