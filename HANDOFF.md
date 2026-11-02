@@ -58,3 +58,7 @@ On 2 November 2026, the live configuration passed hosted health, OAuth redirect/
 ## Submission preparation update
 
 Commit 31719eb adds real captions through a signing-preflight outage, explicit signing retry, hosted privacy/terms pages, published branding/listing assets, and a copy-ready submission packet. 28 unit/integration and four browser checks pass; public CI passed. Native console inspection confirmed version 0.0.1 in Hosted Test with correct paths and only mk__dons allowlisted. Computer Use then stopped because the current browser URL could not be verified safely; installation, real Helper playback, second-account access, and actual OBS remain unverified. OBS was not found in standard local installation paths. Do not claim these are complete. The verified Codex session ID is in submission/DEVPOST_DRAFT.md.
+
+## Final repository and deployment snapshot
+
+Canonical submission repository: https://github.com/moses946/signcast-hackathon. Start a new agent with CONTEXT.md. The earlier repository remains intact. New-repository CI passed at https://github.com/moses946/signcast-hackathon/actions/runs/41459100119. The image from 31719eb is deployed; rollout COMPLETED with one task, public privacy/terms returned 200, live auth configuration passed, and ECR scanning reported no findings. CodeBuild now uses the new repository. `npm run package:submission` rebuilds the credential-free local upload kit. Actual Twitch/OBS/signing/video/submission gates remain explicitly listed in CONTEXT.md and submission/FINAL_STEPS.md.

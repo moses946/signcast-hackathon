@@ -2,6 +2,12 @@
 
 Last updated: 2 November 2026, Africa/Nairobi. Read this file, `HANDOFF.md`, and `docs/VALIDATION.md` before changing or deploying anything. Never interpret a prepared document or a fixture test as evidence of actual Twitch or ASL playback.
 
+## Final verified snapshot
+
+The outage/policy update is deployed from image commit `31719eb`. AWS rollout is COMPLETED with exactly one running task. Hosted live health, OAuth redirect/client/callback, diagnostic Extension JWT/CORS, disabled demo auth, and HTTP 200 privacy/terms checks passed. The ECR image scan is COMPLETE with no reported findings. Future CodeBuild source now points to the new signcast-hackathon repository. The first new-repository CI passed, including the submission ZIP: https://github.com/moses946/signcast-hackathon/actions/runs/41459100119. The local Git working tree is intended to be clean after this final documentation push.
+
+Regenerate the upload kit with `npm run package:submission`. No credentials are included: the packager uses an explicit public-file allowlist. The prior signcast repository remains intact and is tracked locally as remote `previous-origin`; `origin` is the new signcast-hackathon repository.
+
 ## Owner's objective
 
 Finish SignCast for the Codex x TwitchCon hackathon. The owner wants every independent submission requirement prepared while the Signvrse API is unavailable, then real signing validation and the final recording/submission when it recovers. The deadline verified from https://twitchcon-codex.devpost.com/rules is **3 November 2026, 01:00 Nairobi time** (2 November, 14:00 PST). Recheck official rules if resuming after this date.

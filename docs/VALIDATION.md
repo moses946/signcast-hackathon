@@ -54,3 +54,7 @@ Use the hosted API with explicit `signLanguage=asl`. API acceptance and recogniz
 ## Live configuration update
 
 The AWS rollout to live provider mode completed with one task on 2 November 2026. Twitch accepted the OAuth credentials. Hosted checks passed live health, OAuth Client ID and callback matching, server-signed diagnostic extension JWT exchange, configured-origin CORS, and absent demo authentication. Actual Twitch login/Helper playback remains a separate gate. The subsequent Signvrse account preflight still returned HTTP 503, so interpretation is blocked. No paid render was attempted.
+
+## Outage recovery and submission snapshot
+
+Image 31719eb is now deployed with a completed rollout and one task. Live captions can start despite Signvrse preflight failure; signing remains paused with explicit retry. The added regression test passed (28 unit/integration tests total); all four browser tests passed. Public privacy/terms returned 200; hosted live configuration checks passed; ECR scan completed with no reported findings. New submission repository CI, including public-file-only kit packaging, passed: https://github.com/moses946/signcast-hackathon/actions/runs/41459100119. Native console inspection confirmed Hosted Test and correct paths, but actual Helper playback/OBS/two real accounts remain unverified after Computer Use stopped on URL verification.
